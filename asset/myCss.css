@@ -1,0 +1,355 @@
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Common*/
+#main {
+    overflow: hidden ;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.mt-8{
+    margin-top: 8px !important ;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-1{
+    width: 100%;
+}
+.col-3{
+    width: 33.333%;
+}
+.col-2{
+    width: 50%;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.clear{
+    clear: both;
+}
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+#nav{
+    display: inline-block;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav > li > a{  /* Chỉ ăn vào thẻ con a*/
+    color: white; 
+    text-transform: uppercase;
+}
+
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding:0 24px ;
+    display: block;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover  > a {
+    color: black;
+    background-color: #ccc;
+}
+#nav .subnav a{
+    color: #000;
+    background-color: white;
+    padding: 0 24px;
+    line-height: 38px ;
+
+}
+
+#nav, .subnav {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    top: 100%;
+    
+}
+#nav .subnav{
+    display: none;
+    /* position: absolute; */
+    background-color: #fff;
+}
+#nav .nav-down {
+    font-size: 12px;
+    margin-left: 4px;
+}
+.mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    cursor: pointer;
+    height: 46px;
+}
+.nav-search-icon{
+    font-size: 20px;
+    color: white;
+    float: right;
+    padding: 12px 12px 
+}
+#header .search-btn:hover{
+    background-color: red;
+
+}
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#header .mobile-menu-btn:hover .nav-search-icon{
+    
+    color: #000;
+
+}
+#slider{
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46px;
+    background: url('/asset/images/img_la.jpg') top center / cover no-repeat;
+   
+}
+.text-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: white;
+    padding: 32px 0 32px 0;
+    line-height: 1.5;
+
+}
+ .text-heading{
+    font-weight: 400;
+    font-size: 24px;
+
+}
+.text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+.content-section {
+    max-width: 800px;
+    padding: 64px 0 ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+.section-heading{
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+
+}
+#content .about-content{
+    margin-top: 25px;
+    line-height: 1.5;
+}
+#content .team-member{
+    margin-top: 48px;
+}
+#content .member-item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    
+}
+#content .member-name{
+    font-size: 15px;
+}
+#content .name-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+#content .tour-date{
+    margin-top: 200px;
+    color: white;
+}
+.tour-date {
+    background-color: #000;
+}
+#content .ticked{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+
+}
+.ticked li{
+    color: #757575;
+    height:40px ;
+    border-bottom: 1px solid #ddd;
+    padding : 12px 16px  ;
+}
+.sold-out{
+    background-color: #f44336;
+    color: white;
+    margin-left: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding: 4px ;
+}
+.span3{
+    background-color:black ;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    float: right;
+    line-height: 24px;
+    margin-right: 20px;
+    margin-top: -3px;
+}
+.place-list{
+    margin-top: 32px;
+
+}
+.place-item{
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+.place-item img {
+    width: 100%;
+    display: block;
+}
+.place-item img:hover{
+    opacity: 0.7;
+}
+.place-content{
+    background-color: white;
+    padding: 16px 16px 26px 16px;
+    color: black;
+}
+.place-heading{
+    font-size: 15px;
+}
+.place-time{
+    font-size: 15px;
+    margin-top: 20px;
+    opacity: 0.6;
+}
+.place-desc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    word-spacing: 1px ;
+}
+.place-buy-btn{
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.place-buy-btn:hover{
+    background-color: #b2bec3;
+    color: black;
+}
+.contact-content{
+    margin-top: 50px;
+}
+.contact-mail{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-mail i {
+    width:30px ;
+    display: inline-block;
+    
+}
+.col input{
+    font-size: 15px;
+    padding:10px  ;
+    border: 1px solid #ccc ;
+    width: 100%;
+    
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.submit-send{
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    float: right;
+    border: none;
+    padding: 8px 16px;
+
+}
+.submit-send:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.footer-map{
+    margin-top: 64px;
+}
+.footer-map img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+.footer{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    text-align: center;
+    
+}
+.footer .i-con-link{
+    font-size: 25px;
+    word-spacing: 5px;
+    color: #757575;
+}
+.footer .i-con-link i:hover{
+    color:#333 ;
+}
+.footer .power-link{
+    margin-top: 24px;
+    color:#757575 ;
+}
+.power-link a{
+    color: #757575;
+}

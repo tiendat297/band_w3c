@@ -1,0 +1,36 @@
+Đơn vị trong CSS
+Absolut và Relative 
+px và phần trăm phụ thuộc vào thẻ chứa nó
+% phụ thuộc vào thẻ chứa nó
+rem: phụ thuộc vào html
+em: phụ thuộc vào thẻ gần nhất font-size
+Thường sẽ sử dụng rem vì phụ thuộc html 
+vw (view width): chiều ngnag bằng phần trăm trình duyệt
+vh: tương tự với chiều dọc
+ -- Css function
+ rbg(): bảng mã màu
+ calc(): cộng trừ độ dài
+ attr(): 
+ vd: a::after {
+     content: "("attr(href)")"
+ } thẻ a sẽ lấy giá trị của href để in vào thẻ a 
+
+
+ -- pseudo-clased -- lớp giả
+ :root tham chiếu đến phần tử gốc 
+ :hover : di chuột qua có hiện tượng 
+ :active : kích chuột sẽ có hiện tượng
+ :fist-child: thẻ con đầu tiên
+ :last-chld: thẻ con cuối cùng (ví dụ thẻ li đầu tiên trong mớ thẻ li)
+
+
+  -- pseudo-element -- phần tử giả
+  ::after:
+  ::before: trong một thẻ div thì before luôn ở trước và after thì người lại 
+  ::fist-letter: css cho chứ đầu tiên 
+  ::fist-line: css cho dòng đầu tiên 
+  ::selection: lựa chọn (bôi đen thì n ra màu gì, ....)
+
+
+  -- padding---------------------------
+  
